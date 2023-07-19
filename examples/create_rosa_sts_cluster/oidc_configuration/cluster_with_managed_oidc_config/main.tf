@@ -22,7 +22,7 @@ terraform {
     }
     rhcs = {
       version = ">= 1.1.0"
-      source  = "terraform-redhat/rhcs"
+      source  = "terraform.local/local/rhcs"
     }
   }
 }

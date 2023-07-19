@@ -8,10 +8,10 @@ variable "openshift_version" {
   default = "4.13"
 }
 
-variable "account_role_prefix" {
-  type    = string
-  default = ""
-}
+# variable "account_role_prefix" {
+#   type    = string
+#   #default = ""
+# }
 
 variable "token" {
   type = string

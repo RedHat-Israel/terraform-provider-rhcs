@@ -22,7 +22,7 @@ terraform {
     }
     rhcs = {
       version = ">= 1.1.0"
-      source  = "terraform-redhat/rhcs"
+      source  = "terraform.local/local/rhcs"
     }
   }
 }
@@ -42,7 +42,7 @@ module "create_account_roles" {
   create_oidc_provider  = false
   create_account_roles  = true
 
-  account_role_prefix    = var.account_role_prefix
+  #account_role_prefix    = var.account_role_prefix
   ocm_environment        = var.ocm_environment
   rosa_openshift_version = var.openshift_version
   account_role_policies  = data.rhcs_policies.all_policies.account_role_policies
